@@ -1,0 +1,19 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section {
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.container {
+    min-width: 300px;
+    width: 100%;
+
+    @media screen and (min-width: 993px) {
+        margin: 0 auto;
+        max-width: 1200px; 
+    }
+}
+

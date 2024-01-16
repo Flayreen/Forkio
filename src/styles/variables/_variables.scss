@@ -1,0 +1,12 @@
+$primary-color: #8D81AC;
+$secondary-color: #635C73;
+$primary-color-hover: #FFF;
+
+@mixin styleText ($font-size, $font-weight, $line-height, $color, $text-transform, $text-align) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    color: $color;
+    text-transform: $text-transform;
+    text-align: $text-align;
+}

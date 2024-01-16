@@ -1,0 +1,37 @@
+{
+  "name": "forkio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "keywords": [],
+  "author": "Oleg&Anna",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/register": "^7.22.5",
+    "autoprefixer": "^10.4.15",
+    "browser-sync": "^2.29.3",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-pretty-html": "^2.0.10",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "sass": "^1.66.1"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "not dead"
+  ]
+}

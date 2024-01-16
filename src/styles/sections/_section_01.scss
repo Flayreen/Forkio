@@ -1,0 +1,100 @@
+.section-revolutionary {
+    margin: 44px 0 88px;
+    box-sizing: border-box;
+
+    .revolutionary__github-link {
+        text-decoration: none;
+    }
+    .revolutionary__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .revolutionary__title {
+            @include styleText(26px, 700, 28px, $secondary-color, uppercase, center);
+            margin-bottom: 27px;
+        }
+
+        .revolutionary__paragraph {
+            font-family: 'Lato', sans-serif;
+            @include styleText(14px, 400, 1.5, #323232, none, center);
+            margin-bottom: 36px;
+        }
+
+        .revolutionary__github-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            row-gap: 16px;
+            column-gap: 8px;
+            flex-wrap: wrap;
+
+            .revolutionary__github-button {
+                display: flex;
+                align-items: center;
+                border: 1px solid #D5D5D5;
+                border-radius: 4px;
+
+                .github-button__icon-container {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    background-color: #F1F1F1;
+                    border-right: 1px solid #D5D5D5;
+                    padding: 3px 8px;
+                    box-sizing: border-box;
+
+                    .github-button__icon-text {
+                        @include styleText(13px, 600, 1.5, #323232, none, center);
+                    }
+                }
+
+                .github-button__amount-container {
+                    padding: 3px 8px;
+                    .github-button__amount {
+                       @include styleText(13px, 500, 1.5, #323232, none, center); 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:481px) {
+    .section-revolutionary {
+        margin: 88px 0 98px;
+        box-sizing: border-box;
+        .revolutionary__container {
+            .revolutionary__title {
+                @include styleText(42px, 700, 42px, $secondary-color, uppercase, center);
+                margin-bottom: 27px;
+            }
+
+            .revolutionary__paragraph {
+                font-family: 'Lato', sans-serif;
+                @include styleText(21px, 400, 1.5, #323232, none, center);
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:993px) {
+    .section-revolutionary {
+        margin: 0;
+        margin-bottom: 70px;
+        .revolutionary__container {
+            .revolutionary__title {
+                @include styleText(54px, 700, 54px, $secondary-color, uppercase, center);
+                margin-bottom: 35px;
+            }
+
+            .revolutionary__paragraph {
+                font-family: 'Lato', sans-serif;
+                max-width: 861px;
+                @include styleText(21px, 400, 1.5, #323232, none, center);
+                margin-bottom: 13px;
+            }
+        }
+    }
+}

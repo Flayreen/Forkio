@@ -1,0 +1,198 @@
+.section-price {
+    padding-bottom: 12px;
+    box-sizing: border-box;
+    background-color: #4B3B4E;
+    background-image: none;
+
+    .price__title {
+        @include styleText(28px, 700, 42px, white, capitalize, center);
+        margin-bottom: 32px;
+    }
+
+    .price__subscription-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .price__subscription-item {
+        width: 257px;
+        height: 457px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.11);
+
+        .subscription-item__title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 36px 0;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.06);
+
+            .subscription-item__title {
+                @include styleText(24px, 400, 24px, white, uppercase, center);
+            }
+        }
+
+        .subscription-item__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+            box-sizing: border-box;
+
+            .subscription-item__price {
+                @include styleText(60px, 700, 62px, white, capitalize, center);
+                margin-bottom: 20px;  
+            }
+
+            .subscription-item__term {
+                @include styleText(14px, 400, 16px, white, uppercase, center);
+                margin-bottom: 30px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 38px;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 60px;
+                    height: 5px;
+                    background-color: $primary-color;
+                }
+            }
+
+            .subscription-item__list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                @include styleText(16px, 400, 18px, white, capitalize, center);
+                margin-bottom: 39px;   
+            }
+
+            .subscription-item__button {
+                width: 160px;
+                height: 42px;
+                background-color: rgba(255, 255, 255, 0.15);
+                border: none;
+                border-radius: 99px;
+
+                @include styleText(15px, 300, 15px, white, uppercase, center);
+            }
+        }
+    }
+
+    .subscription-item--large {
+        width: 300px;
+        height: 560px;
+        background-color: #463048;
+
+        .subscription-item__title-container {
+            padding: 43px 0;
+            background-color: #00000011;
+        }
+
+        .subscription-item__content {
+            padding-top: 14px;
+
+            .subscription-item__price {
+                @include styleText(82px, 700, 84px, white, uppercase, center);
+                margin-bottom: 16px;
+            }
+
+            .subscription-item__term {
+                margin-bottom: 40px;
+            }
+
+            .subscription-item__list {
+                margin-bottom: 83px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:481px) {
+    .section-price {
+        padding: 90px 0 94px;
+        box-sizing: border-box;
+        background-image: url(../images/section_04/backgound-tablet.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .price__title {
+            @include styleText(42px, 700, 44px, white, capitalize, center);
+            margin-bottom: 39px;
+        }
+
+        @media screen and (min-width: 602px) {
+            .price__subscription-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                row-gap: 30px;
+                column-gap: 25px;
+
+                .price__subscription-item:nth-child(3) {
+                    position: relative;
+                    right: 21px;
+
+                    @media screen and (min-width: 864px) {
+                        right: 0;
+                    }
+                }
+
+                .price__subscription-item:nth-child(4) {
+                    position: relative;
+                    right: 21px;
+                }
+            }
+        }
+
+        @media screen and (min-width: 602px) {
+            .price__subscription-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                row-gap: 30px;
+                column-gap: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:993px) {
+    .section-price {
+        padding: 112px 0 73px;
+        box-sizing: border-box;
+        background-position: top;
+
+        .price__title {
+            @include styleText(48px, 700, 50px, white, capitalize, center);
+            margin-bottom: 61px;
+        }
+
+        @media screen and (min-width:1116px) {
+            .price__subscription-container {
+                display: flex;
+                gap: 15px;
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+            .price__subscription-item:nth-child(3) {
+                right: 0;
+            }
+
+            .price__subscription-item:nth-child(4) {
+                right: 0;
+            }
+        }
+        }
+    }
+}
